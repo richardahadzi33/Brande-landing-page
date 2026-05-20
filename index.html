@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-container</title>
+    <link rel="stylesheet" href="css/stlyle.css">
+</head>
+<body>
+<section class="services-section">
+    
+    <header class="services-header">
+        <h2>Our Premium Services</h2>
+        <p>Explore what we can do to help your business grow.</p>
+    </header>
+
+    <div class="services-container">
+        <article class="service-card">
+            <div class="service-icon" aria-hidden="true">🌐</div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-description">
+                We design clean,fast and modern responsive experiences that grow your business and also a reliable SEO-friendly websites tailored to your brand's unique needs.
+            </p>
+            <button class="service-link" onclick="openModal('web-development')">Learn More</button>
+        </article>
+        <article class="service-card">
+            <div class="service-icon" aria-hidden="true">🎨</div>
+            <h3 class="service-title">UI/UX Design</h3>
+            <p class="service-description">
+                Crafting intuitive user interfaces and delightful user experiences that keep customers coming back.
+            </p>
+            <p class="service-description">
+                Flawless user experience across all devices.
+            </p>
+            <button class="service-link" onclick="openModal('ui-ux-design')">Learn More</button>
+        </article>
+        <article class="service-card">
+            <div class="service-icon" aria-hidden="true">📈</div>
+            <h3 class="service-title">Digital Marketing</h3>
+            <p class="service-description">
+                Data-driven marketing strategies ranging from SEO to social media campaigns that scale your business.
+            </p>
+            <button class="service-link" onclick="openModal('digital-marketing')">Learn More</button>
+        </article>
+
+    </div>
+
+</section>
+<div id="serviceModal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <div class="modal-body">
+            <div class="modal-icon" id="modalIcon"></div>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <div class="modal-details">
+                <h3>What's Included:</h3>
+                <ul id="modalFeatures"></ul>
+            </div>
+            <button class="modal-cta" onclick="contactUs()">Get Started</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
